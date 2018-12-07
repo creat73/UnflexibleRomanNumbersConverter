@@ -1,7 +1,9 @@
 public class RomanNumbersConverter {
+    //This code was meant to be unflexible so all roman symbols are inside the method
 
     public String Convert(int number){
-        if(number<=0) {
+        // 5000 upper limit can be removed then the code will just append more M for each 1000 above(not correct)
+        if(number<=0 || number>=5000) {
             return null;
         }
 
